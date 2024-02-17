@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+.frame-1,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black !important;
+}
+.frame-1 {
+  background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
+  width: 45rem;
+  height: 56rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.rectangle-1 {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4rem;
+  box-shadow: -1px -1px 1px #fd80b6;
+  border-width: 1px;
+  width: 35rem;
+  height: 47rem;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.inputfield {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+input {
+  width: 70%;
+  height: 5rem;
+  border-radius: 28px;
+  outline: none;
+  font-size: 1.5rem !important;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 1.5rem;
+}
+input::placeholder {
+  font-size: 1.5rem;
+  color: white;
+}
+.searchbtn {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+.bi-search {
+  height: 50%;
+  width: auto;
+}
+.searchbtn:hover {
+  background-color: rgba(55, 160, 252, 0.145);
+}
+.icon {
+  width: 7rem;
+  height: 7rem;
+}
+#wicon {
+  width: 100%;
+  height: 100%;
+}
+.temp {
+  width: 50%;
+  color: white;
+  font-size: 6rem;
+  height: 10rem;
+
+  text-align: center;
+}
+.feelslike {
+  font-size: 2rem;
+  font-weight: 200;
+  color: white;
+}
+.city-name {
+  color: white;
+  font-weight: 400;
+  font-size: 3rem;
+}
+section {
+  width: 80%;
+  height: 9.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.extra {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+}
+.extraname {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  color: white;
+  font-weight: 500;
+}
+p {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.humidity,
+.pressure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: auto;
+  width: auto;
+  gap: 1rem;
+}
+.humidity1,
+.pressure1 {
+  font-size: 2rem;
+}
+.bi-moisture,
+.bi-wind {
+  width: 3rem;
+  height: auto;
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 40%;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
