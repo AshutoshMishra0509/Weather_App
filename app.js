@@ -1,7 +1,7 @@
 const base_URL =
   "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}";
 const lan_long =
-  "http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}";
+  "https://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}";
 const API = "2fda959472d60dbe4cefbfdc2c1222a4";
 function clearDefaultText(input) {
   if (input.value === "Default Text") {
@@ -56,14 +56,14 @@ async function fetchweather(URL) {
   return dtjson;
 }
 async function fetchlatitude(city) {
-  let URL = `http://api.openweathermap.org/geo/1.0/direct?q=${city},&appid=${API}`;
+  let URL = `https://api.openweathermap.org/geo/1.0/direct?q=${city},&appid=${API}`;
   let data = await fetch(URL);
   let datajson = await data.json();
   let latvalue = datajson[0]["lat"];
   return latvalue;
 }
 async function fetchlongitude(city) {
-  let URL = `http://api.openweathermap.org/geo/1.0/direct?q=${city},&appid=${API}`;
+  let URL = `https://api.openweathermap.org/geo/1.0/direct?q=${city},&appid=${API}`;
   let data = await fetch(URL);
   let datajson = await data.json();
   let lonvalue = datajson[0]["lon"];
